@@ -86,7 +86,7 @@ input::-moz-placeholder, textarea::-moz-placeholder { font-size: 15px; color: #3
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 15px; color: #3b3b3b; font-family: "helveticaneuecyrlight"; font-weight: normal; font-style: normal; }
 input::placeholder, textarea::placeholder { font-size: 15px; color: #3b3b3b; font-family: "helveticaneuecyrlight"; font-weight: normal; font-style: normal; }
 
-.top .top_in, header .menu .menu_in, header .h1_in, header .header_in, .order .order_in, .facade .facade_in, .orderWide .orderWide_in, .inside .inside_in, .our_works .our_works_in, .orderMan .orderMan_in { max-width: 1200px; width: 1200px; margin-left: auto; margin-right: auto; }
+.top .top_in, header .menu .menu_in, header .h1_in, header .header_in, .order .order_in, .facade .facade_in, .orderWide .orderWide_in, .inside .inside_in, .our_works .our_works_in, .orderMan .orderMan_in, .get .get_in, .certificates .certificates_in { max-width: 1200px; width: 1200px; margin-left: auto; margin-right: auto; }
 
 .myFancyClose { position: absolute; top: 15px; right: 50px; }
 
@@ -204,7 +204,7 @@ header .header_girl-right { float: right; position: relative; margin-top: 88px; 
 .our_works .our_works_slider h3 a { color: #0054ff; }
 .our_works .our_works_slider h3 a:hover { text-decoration: none; }
 
-.orderMan { position: relative; background: url(../img/other_bg.png) center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 611px; }
+.orderMan { position: relative; background: url(../img/other_bg.png) center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 611px; z-index: 3; }
 .orderMan .orderMan_in { width: 950px; position: relative; padding-top: 95px; margin-left: 235px; }
 .orderMan .orderMan_in .om_h2 { position: relative; background: url(../img/white_rectangle.png) no-repeat 105px 8px; height: 160px; font-family: "Georgia"; font-weight: normal; font-style: normal; font-size: 25px; font-weight: bold; box-sizing: border-box; text-transform: uppercase; padding-top: 40px; letter-spacing: 1px; }
 .orderMan .orderMan_in .om_h2:before { position: absolute; content: ""; background: url(../img/arrow_white.png) no-repeat; width: 565px; height: 91px; top: -55px; left: 180px; }
@@ -217,4 +217,31 @@ header .header_girl-right { float: right; position: relative; margin-top: 88px; 
 .orderMan ul li span { padding: 4px 8px; background: white; }
 .orderMan .header_form_block { top: 110px; left: 440px; }
 
-.steps { background: url(../img/steps_bg.jpg) center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 1602px; margin-top: -160px; }
+.steps { background: url(../img/steps_bg.png) center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 1602px; margin-top: -160px; position: relative; }
+
+.get { margin-top: -120px; padding-top: 220px; background: url(../img/get_bg.png) center no-repeat; height: 744px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; box-sizing: border-box; }
+.get .get_stroke { position: relative; border-top: solid 1px black; }
+.get .get_in { width: 1120px; position: relative; }
+.get .get_in:after { background: url(../img/get_red.png) no-repeat; content: ""; top: 165px; left: -90px; width: 1260px; height: 334px; position: absolute; }
+.get h2 { position: relative; margin-top: -85px; }
+.get .get_items { margin-top: 50px; position: relative; }
+.get .row { margin-bottom: 50px; position: relative; }
+.get .row:first-child:after { position: absolute; content: ""; top: 157px; background: rgba(141, 141, 141, 0.2) no-repeat; width: 1064px; height: 1px; }
+.get .get_item { display: inline-block; width: 360px; margin-right: 14px; position: relative; }
+.get .get_item:after { position: absolute; content: ""; background: rgba(141, 141, 141, 0.2) no-repeat; width: 1px; height: 144px; top: 23px; left: 364px; }
+.get .get_item:last-child { margin-right: 0; }
+.get .get_item:nth-child(3n+3):after { background: none; }
+.get .get_item .get_img { float: left; height: 45px; margin-right: 12px; margin-top: 5px; }
+.get .get_item h3 { font-size: 17.2px; font-family: "helveticaneuecyrbold"; font-weight: normal; font-style: normal; text-transform: uppercase; margin-bottom: 5px; letter-spacing: -1px; }
+.get .get_item p { font-size: 16px; font-family: "helveticaneuecyrlight"; font-weight: normal; font-style: normal; width: 300px; float: left; }
+
+.certificates { margin-top: 30px; }
+.certificates .certificates_in { position: relative; width: 1120px; }
+.certificates h2 { font-family: "Georgia"; font-weight: normal; font-style: normal; font-size: 35px; font-weight: bold; text-align: center; text-transform: uppercase; }
+.certificates h3 { font-family: "helveticaneuecyrmedium"; font-weight: normal; font-style: normal; font-size: 16px; text-transform: uppercase; text-align: center; }
+.certificates .certificates_slider { margin-top: 10px; *zoom: 1; }
+.certificates .certificates_slider:after { content: " "; display: table; clear: both; }
+.certificates .certificates_slider .slider_item { vertical-align: top; display: inline-block; text-align: left; width: 241px; margin-right: 42px; }
+.certificates .certificates_slider .slider_item:last-child { margin-right: 0; }
+.certificates .certificates_slider .certificates_img { position: relative; line-height: 0; }
+.certificates .prev, .certificates .next { top: 60%; }
