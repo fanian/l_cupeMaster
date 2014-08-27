@@ -44,10 +44,10 @@ input.phone { background: white url(../img/phone_input.png) no-repeat 10px 11px;
 .button { margin-top: 7px; height: 55px; -webkit-border-radius: 2px/2px 2px 2px 2px; -moz-border-radius: 2px/2px 2px 2px 2px; -ms-border-radius: 2px/2px 2px 2px 2px; -o-border-radius: 2px/2px 2px 2px 2px; border-radius: 2px/2px 2px 2px 2px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background: red; -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.39), inset 0 -4px 0 rgba(0, 0, 0, 0.32), inset 0 0 2px rgba(255, 171, 171, 0.75); -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.39), inset 0 -4px 0 rgba(0, 0, 0, 0.32), inset 0 0 2px rgba(255, 171, 171, 0.75); box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.39), inset 0 -4px 0 rgba(0, 0, 0, 0.32), inset 0 0 2px rgba(255, 171, 171, 0.75); background: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #ee0000), color-stop(100%, #ff3131)); background: -webkit-linear-gradient(to bottom, #ee0000 0%, #ff3131 100%); background: -moz-linear-gradient(to bottom, #ee0000 0%, #ff3131 100%); background: -o-linear-gradient(to bottom, #ee0000 0%, #ff3131 100%); background: linear-gradient(to bottom, #ee0000 0%, #ff3131 100%); box-sizing: border-box; font-family: "helveticaneuecyrbold"; color: #f3f3f2; text-transform: uppercase; font-size: 18px; padding: 0 73px; text-shadow: 0px 0px 1px #aaaaaa; }
 .button:hover { -webkit-box-shadow: 0 0 60px -5px #ff3131; -moz-box-shadow: 0 0 60px -5px #ff3131; box-shadow: 0 0 60px -5px #ff3131; }
 
-.prev { position: absolute; content: ""; top: 44%; left: -52px; background: black; width: 40px; height: 40px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; padding-left: 13px; padding-top: 11px; box-sizing: border-box; cursor: pointer; }
+.prev { position: absolute; content: ""; top: 44%; left: -52px; background: black; width: 40px; height: 40px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; padding-left: 13px; padding-top: 11px; box-sizing: border-box; cursor: pointer; z-index: 1; }
 .prev:hover { background: #f61818; }
 
-.next { position: absolute; content: ""; top: 44%; right: -33px; background: black; width: 40px; height: 40px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; padding-left: 13px; padding-top: 11px; box-sizing: border-box; cursor: pointer; }
+.next { position: absolute; content: ""; top: 44%; right: -33px; background: black; width: 40px; height: 40px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; padding-left: 15px; padding-top: 11px; box-sizing: border-box; cursor: pointer; z-index: 1; }
 .next:hover { background: #f61818; }
 
 .header_form_block { position: absolute; width: 555px; height: 613px; background: url(../img/form_bg.png) no-repeat; left: 353px; top: 5px; text-align: center; }
@@ -237,8 +237,8 @@ header .header_girl-right { float: right; position: relative; margin-top: 88px; 
 
 .certificates { margin-top: 30px; }
 .certificates .certificates_in { position: relative; width: 1120px; }
-.certificates h2 { font-family: "Georgia"; font-weight: normal; font-style: normal; font-size: 35px; font-weight: bold; text-align: center; text-transform: uppercase; }
-.certificates h3 { font-family: "helveticaneuecyrmedium"; font-weight: normal; font-style: normal; font-size: 16px; text-transform: uppercase; text-align: center; }
+.certificates h2 { font-family: "Georgia"; font-weight: normal; font-style: normal; font-size: 35px; font-weight: bold; text-align: center; text-transform: uppercase; line-height: 1.2em; }
+.certificates h3 { font-family: "helveticaneuecyrmedium"; font-weight: normal; font-style: normal; font-size: 16px; text-transform: uppercase; text-align: center; margin-top: 15px; margin-bottom: 35px; }
 .certificates .certificates_slider { margin-top: 10px; *zoom: 1; }
 .certificates .certificates_slider:after { content: " "; display: table; clear: both; }
 .certificates .certificates_slider .slider_item { vertical-align: top; display: inline-block; text-align: left; width: 241px; margin-right: 42px; }
