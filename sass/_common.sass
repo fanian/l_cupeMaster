@@ -74,20 +74,27 @@
   font-style: normal
 
 .counter
-  width: 285px
+  float: left
+  width: 595px
   margin: auto auto 0
   display: block
   text-align: center
   p
     margin-bottom: 5px
-    margin-top: 3px
     position: static
     color: #ffffff
-    font-family: 'roboto_slablight'
-    font-size: 12px
+    +hcb
+    font-size: 15px
+    text-transform: uppercase
+    margin-top: 20px
     &.counterTitle
-      font-size: 15px
-      font-family: inherit
+      font-size: 20px
+      text-align: left
+      margin-top: 10px
+      margin-bottom: 40px
+      +hcb
+      text-transform: uppercase
+
 
 
 
@@ -99,26 +106,37 @@
 
     li
       float: left
-      margin: 0 5px
+      margin: 0 5px 0 -10px
       text-align: center
       position: relative
+      &:first-child
+        margin-left: 0
+      &:last-of-type
+        background: url(../img/seconds_bg.png) no-repeat -32px -32px
+        height: 196px
+        width: 212px
+        p
+          padding-right: 86px
 
       span
         +text-shadow(0 1px 0 #fff)
         display: block
-        font-size: 33px
-        width: 61px
-        height: 61px
+        font-size: 45px
+        width: 129px
+        height: 129px
         padding-right: 1px
-        font-family: 'roboto_slabbold'
-        color: #595959
+        color: white
+        +georgia
+        font-weight: bold
+        border: rgb(232,59,59) solid 10px
         @include background-clip(padding-box)
-        +border-radius(30px / 31px 31px 30px 30px)
-        background-color: #333
-        +box-shadow(0 2px 1px rgba(0,0,0,.47))
-        +background(linear-gradient(#f3f3f3 0%, #9e9ea0 100%))
+        background-color: rgba(0,0,0,.23)
+        @include box-shadow(0 0 10px rgba(0,0,0,.75))
+        +border-radius(50%)
         box-sizing: border-box
-        padding-top: 7px
+        padding-top: px
+        line-height: 2em
+
 .radio_toolbar
   +clr
   margin-top: 15px

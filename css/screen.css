@@ -18,12 +18,15 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-.counter { width: 285px; margin: auto auto 0; display: block; text-align: center; }
-.counter p { margin-bottom: 5px; margin-top: 3px; position: static; color: white; font-family: "roboto_slablight"; font-size: 12px; }
-.counter p.counterTitle { font-size: 15px; font-family: inherit; }
+.counter { float: left; width: 595px; margin: auto auto 0; display: block; text-align: center; }
+.counter p { margin-bottom: 5px; position: static; color: white; font-family: "helveticaneuecyrbold"; font-weight: normal; font-style: normal; font-size: 15px; text-transform: uppercase; margin-top: 20px; }
+.counter p.counterTitle { font-size: 20px; text-align: left; margin-top: 10px; margin-bottom: 40px; font-family: "helveticaneuecyrbold"; font-weight: normal; font-style: normal; text-transform: uppercase; }
 .counter ul { list-style: none; margin: 0; padding: 0; display: inline-block; }
-.counter ul li { float: left; margin: 0 5px; text-align: center; position: relative; }
-.counter ul li span { text-shadow: 0 1px 0 white; display: block; font-size: 33px; width: 61px; height: 61px; padding-right: 1px; font-family: "roboto_slabbold"; color: #595959; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; -webkit-border-radius: 30px/31px 31px 30px 30px; -moz-border-radius: 30px/31px 31px 30px 30px; -ms-border-radius: 30px/31px 31px 30px 30px; -o-border-radius: 30px/31px 31px 30px 30px; border-radius: 30px/31px 31px 30px 30px; background-color: #333333; -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.47); -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.47); box-shadow: 0 2px 1px rgba(0, 0, 0, 0.47); background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3f3f3), color-stop(100%, #9e9ea0)); background: -webkit-linear-gradient(#f3f3f3 0%, #9e9ea0 100%); background: -moz-linear-gradient(#f3f3f3 0%, #9e9ea0 100%); background: -o-linear-gradient(#f3f3f3 0%, #9e9ea0 100%); background: linear-gradient(#f3f3f3 0%, #9e9ea0 100%); box-sizing: border-box; padding-top: 7px; }
+.counter ul li { float: left; margin: 0 5px 0 -10px; text-align: center; position: relative; }
+.counter ul li:first-child { margin-left: 0; }
+.counter ul li:last-of-type { background: url(../img/seconds_bg.png) no-repeat -32px -32px; height: 196px; width: 212px; }
+.counter ul li:last-of-type p { padding-right: 86px; }
+.counter ul li span { text-shadow: 0 1px 0 white; display: block; font-size: 45px; width: 129px; height: 129px; padding-right: 1px; color: white; font-family: "Georgia"; font-weight: normal; font-style: normal; font-weight: bold; border: #e83b3b solid 10px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background-color: rgba(0, 0, 0, 0.23); -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75); -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75); box-shadow: 0 0 10px rgba(0, 0, 0, 0.75); -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; box-sizing: border-box; padding-top: px; line-height: 2em; }
 
 .radio_toolbar { *zoom: 1; margin-top: 15px; margin-left: 10px; }
 .radio_toolbar:after { content: " "; display: table; clear: both; }
@@ -86,7 +89,7 @@ input::-moz-placeholder, textarea::-moz-placeholder { font-size: 15px; color: #3
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 15px; color: #3b3b3b; font-family: "helveticaneuecyrlight"; font-weight: normal; font-style: normal; }
 input::placeholder, textarea::placeholder { font-size: 15px; color: #3b3b3b; font-family: "helveticaneuecyrlight"; font-weight: normal; font-style: normal; }
 
-.top .top_in, header .menu .menu_in, header .h1_in, header .header_in, .order .order_in, .facade .facade_in, .orderWide .orderWide_in, .inside .inside_in, .our_works .our_works_in, .orderMan .orderMan_in, .get .get_in, .certificates .certificates_in { max-width: 1200px; width: 1200px; margin-left: auto; margin-right: auto; }
+.top .top_in, header .menu .menu_in, header .h1_in, header .header_in, .order .order_in, .facade .facade_in, .orderWide .orderWide_in, .inside .inside_in, .our_works .our_works_in, .orderMan .orderMan_in, .get .get_in, .certificates .certificates_in, .workers .workers_in, .reviews .reviews_in, .bottom .bottom_in { max-width: 1200px; width: 1200px; margin-left: auto; margin-right: auto; }
 
 .myFancyClose { position: absolute; top: 15px; right: 50px; }
 
@@ -219,7 +222,7 @@ header .header_girl-right { float: right; position: relative; margin-top: 88px; 
 
 .steps { background: url(../img/steps_bg.png) center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 1602px; margin-top: -160px; position: relative; }
 
-.get { margin-top: -120px; padding-top: 220px; background: url(../img/get_bg.png) center no-repeat; height: 744px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; box-sizing: border-box; }
+.get { margin-top: -120px; padding-top: 220px; background: url(../img/stripes_bg.png) repeat; height: 744px; box-sizing: border-box; }
 .get .get_stroke { position: relative; border-top: solid 1px black; }
 .get .get_in { width: 1120px; position: relative; }
 .get .get_in:after { background: url(../img/get_red.png) no-repeat; content: ""; top: 165px; left: -90px; width: 1260px; height: 334px; position: absolute; }
@@ -245,3 +248,49 @@ header .header_girl-right { float: right; position: relative; margin-top: 88px; 
 .certificates .certificates_slider .slider_item:last-child { margin-right: 0; }
 .certificates .certificates_slider .certificates_img { position: relative; line-height: 0; }
 .certificates .prev, .certificates .next { top: 60%; }
+
+.wide2 { background: url(../img/formWide_bg2.png) center no-repeat; height: 537px; }
+.wide2 .orderWide_in { padding-top: 120px; }
+.wide2 .orderWide_in .form_send_block .radio_toolbar_auto { background: none; }
+
+.workers { background: url(../img/dots_bg.png) repeat; height: 510px; -webkit-box-shadow: 0 0 13px -2px black; -moz-box-shadow: 0 0 13px -2px black; box-shadow: 0 0 13px -2px black; }
+.workers .workers_in { padding-top: 50px; width: 1140px; position: relative; }
+.workers .workers_in .prev { top: 60%; left: -40px; }
+.workers .workers_in .next { top: 60%; right: -31px; }
+.workers h2 { font-size: 35px; }
+.workers h3 { font-size: 16px; text-transform: uppercase; font-family: "helveticaneuecyrbold"; font-weight: normal; font-style: normal; text-align: center; }
+.workers .workers_slider { margin-top: 70px; }
+.workers .workers_slider .workers_item { display: inline-block; width: 215px; text-align: center; margin-right: 10px; }
+.workers .workers_slider .workers_item:nth-child(5n+5) { margin-right: 0; }
+.workers .workers_slider .workers_item .workers_img { margin-bottom: 20px; }
+.workers .workers_slider .workers_item .workers_img img { width: 180px; height: 180px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
+
+.reviews { box-sizing: border-box; background: url(../img/stripes_bg.png) repeat; height: 506px; padding-top: 120px; }
+.reviews .reviews_stroke { border-top: 1px solid black; }
+.reviews .reviews_in { width: 1140px; position: relative; }
+.reviews .reviews_in .prev { top: 60%; }
+.reviews .reviews_in .next { top: 60%; }
+.reviews h2 { margin-top: -85px; }
+.reviews .reviews_slider { margin-top: 60px; }
+.reviews .reviews_slider .reviews_item { vertical-align: top; width: 560px; display: inline-block; }
+.reviews .reviews_slider .reviews_item .reviews_img { float: left; margin-right: 15px; }
+.reviews .reviews_slider .reviews_item .reviews_img img { width: 180px; height: 180px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
+.reviews .reviews_slider .reviews_item .reviews_text { text-align: left; font-size: 16px; float: left; width: 350px; }
+.reviews .reviews_slider .reviews_item .reviews_text h3 { font-family: "helveticaneuecyrbold"; font-weight: normal; font-style: normal; text-transform: uppercase; margin-bottom: 10px; }
+.reviews .reviews_slider .reviews_item .reviews_text p { font-family: "helveticaneuecyrlight"; font-weight: normal; font-style: normal; color: #2a2a2a; }
+.reviews .reviews_slider .reviews_item .social { margin-top: 15px; }
+.reviews .reviews_slider .reviews_item .social .vk, .reviews .reviews_slider .reviews_item .social .fb, .reviews .reviews_slider .reviews_item .social .ok { display: inline-block; }
+
+.bottom { background: url(../img/bottom_bg.jpg) center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 1188px; padding-top: 85px; box-sizing: border-box; }
+.bottom .bottom_in { position: relative; }
+.bottom .bottom_in:after { position: absolute; content: ""; background: url('../img/icons-s71d911583d.png') 0 -248px no-repeat; width: 52px; height: 54px; top: 610px; left: 45%; }
+.bottom h2 { text-align: left; display: table; padding: 0 5px; line-height: 1.2em; background: white; text-transform: uppercase; letter-spacing: 2px; font-family: "Georgia"; font-weight: normal; font-style: normal; font-weight: bold; color: #ff0b0b; font-size: 42px; }
+.bottom h2 span { color: black; font-size: 39px; }
+.bottom .present { margin-top: 45px; *zoom: 1; }
+.bottom .present:after { content: " "; display: table; clear: both; }
+.bottom .present .present_img { float: left; margin-right: 15px; }
+.bottom .present .present_img img { width: 136px; height: 136px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 6px solid #191919; background-clip: padding-box; }
+.bottom .present h3 { font-size: 20px; font-family: "Georgia"; font-weight: normal; font-style: normal; text-transform: uppercase; color: white; padding-top: 15px; }
+.bottom .present h4 { text-align: left; display: table; padding: 0 4px; background: #fe2d2d; font-size: 25px; font-family: "helveticaneuecyrbold"; font-weight: normal; font-style: normal; text-transform: uppercase; color: white; }
+.bottom .bottom_form_block { left: 492px; top: -33px; }
+.bottom .bottom_girl-right { float: right; margin-right: -125px; margin-top: -238px; }

@@ -617,9 +617,8 @@ header
 .get
   margin-top: -120px
   padding-top: 220px
-  background: url(../img/get_bg.png) center no-repeat
+  background: url(../img/stripes_bg.png) repeat
   height: 744px
-  +background-size(cover)
   box-sizing: border-box
   .get_stroke
     position: relative
@@ -730,6 +729,176 @@ header
       line-height: 0
   .prev, .next
     top: 60%
+.wide2
+  background: url(../img/formWide_bg2.png) center no-repeat
+  height: 537px
+  .orderWide_in
+    padding-top: 120px
+    .form_send_block
+      .radio_toolbar_auto
+        background: none
+
+.workers
+  background: url(../img/dots_bg.png) repeat
+  height: 510px
+  +box-shadow(0 0 13px -2px black)
+  .workers_in
+    @extend %in
+    padding-top: 50px
+    width: 1140px
+    position: relative
+    .prev
+      top: 60%
+      left: -40px
+    .next
+      top: 60%
+      right: -31px
+  h2
+    font-size: 35px
+  h3
+    font-size: 16px
+    text-transform: uppercase
+    +hcb
+    text-align: center
+
+  .workers_slider
+    margin-top: 70px
+    .workers_item
+      display: inline-block
+      width: 215px
+      text-align: center
+      margin-right: 10px
+      &:nth-child(5n+5)
+        margin-right: 0
+      .workers_img
+        margin-bottom: 20px
+        img
+          width: 180px
+          height: 180px
+          +border-radius(50%)
+
+.reviews
+  box-sizing: border-box
+  background: url(../img/stripes_bg.png) repeat
+  height: 506px
+  padding-top: 120px
+  .reviews_stroke
+    border-top: 1px solid black
+  .reviews_in
+    @extend %in
+    width: 1140px
+    position: relative
+
+    .prev
+      top: 60%
+    .next
+      top: 60%
+  h2
+    margin-top: -85px
+  .reviews_slider
+    margin-top: 60px
+    .reviews_item
+      vertical-align: top
+      width: 560px
+      display: inline-block
+      .reviews_img
+        float: left
+        margin-right: 15px
+        img
+          width: 180px
+          height: 180px
+          +border-radius(50%)
+      .reviews_text
+        text-align: left
+        font-size: 16px
+        float: left
+        width: 350px
+        h3
+          +hcb
+          text-transform: uppercase
+          margin-bottom: 10px
+        p
+          +hcl
+          color: #2a2a2a
+      .social
+        margin-top: 15px
+        .vk,.fb,.ok
+          display: inline-block
+
+
+.bottom
+  background: url(../img/bottom_bg.jpg) center no-repeat
+  +background-size(cover)
+  height: 1188px
+  padding-top: 85px
+  box-sizing: border-box
+  .bottom_in
+    @extend %in
+    position: relative
+    &:after
+      position: absolute
+      content: ""
+      +s(rectangle)
+      top: 610px
+      left: 45%
+
+  h2
+    text-align: left
+    display: table
+    padding: 0 5px
+    line-height: 1.2em
+    background: #ffffff
+    text-transform: uppercase
+    letter-spacing: 2px
+    +georgia
+    font-weight: bold
+    color: #ff0b0b
+    font-size: 42px
+    span
+      color: black
+      font-size: 39px
+  .present
+    margin-top: 45px
+    +clr
+    .present_img
+      float: left
+      margin-right: 15px
+      img
+        width: 136px
+        height: 136px
+        +border-radius(50%)
+        border: 6px solid #191919
+        background-clip: padding-box
+    h3
+      font-size: 20px
+      +georgia
+      text-transform: uppercase
+      color: white
+      padding-top: 15px
+    h4
+      text-align: left
+      display: table
+      padding: 0 4px
+      background: rgb(254,45,45)
+      font-size: 25px
+      +hcb
+      text-transform: uppercase
+      color: white
+  .bottom_form_block
+    left: 492px
+    top: -33px
+  .bottom_girl-right
+    float: right
+    margin-right: -125px
+    margin-top: -238px
+
+
+
+
+
+
+
+
 
 
 
