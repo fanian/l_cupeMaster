@@ -89,7 +89,7 @@ input::-moz-placeholder, textarea::-moz-placeholder { font-size: 15px; color: #3
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 15px; color: #3b3b3b; font-family: "helveticaneuecyrlight"; font-weight: normal; font-style: normal; }
 input::placeholder, textarea::placeholder { font-size: 15px; color: #3b3b3b; font-family: "helveticaneuecyrlight"; font-weight: normal; font-style: normal; }
 
-.top .top_in, header .menu .menu_in, header .h1_in, header .header_in, .order .order_in, .facade .facade_in, .orderWide .orderWide_in, .inside .inside_in, .our_works .our_works_in, .orderMan .orderMan_in, .get .get_in, .certificates .certificates_in, .workers .workers_in, .reviews .reviews_in, .bottom .bottom_in { max-width: 1200px; width: 1200px; margin-left: auto; margin-right: auto; }
+.top .top_in, header .menu .menu_in, header .h1_in, header .header_in, .order .order_in, .facade .facade_in, .orderWide .orderWide_in, .inside .inside_in, .our_works .our_works_in, .orderMan .orderMan_in, .get .get_in, .certificates .certificates_in, .workers .workers_in, .reviews .reviews_in, .bottom .bottom_in, .bottom .questions .questions_in { max-width: 1200px; width: 1200px; margin-left: auto; margin-right: auto; }
 
 .myFancyClose { position: absolute; top: 15px; right: 50px; }
 
@@ -282,8 +282,11 @@ header .header_girl-right { float: right; position: relative; margin-top: 88px; 
 .reviews .reviews_slider .reviews_item .social .vk, .reviews .reviews_slider .reviews_item .social .fb, .reviews .reviews_slider .reviews_item .social .ok { display: inline-block; }
 
 .bottom { background: url(../img/bottom_bg.jpg) center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 1188px; padding-top: 85px; box-sizing: border-box; }
-.bottom .bottom_in { position: relative; }
+.bottom .bottom_in { position: relative; *zoom: 1; }
+.bottom .bottom_in:after { content: " "; display: table; clear: both; }
 .bottom .bottom_in:after { position: absolute; content: ""; background: url('../img/icons-s71d911583d.png') 0 -248px no-repeat; width: 52px; height: 54px; top: 610px; left: 45%; }
+.bottom .bottom_left { *zoom: 1; }
+.bottom .bottom_left:after { content: " "; display: table; clear: both; }
 .bottom h2 { text-align: left; display: table; padding: 0 5px; line-height: 1.2em; background: white; text-transform: uppercase; letter-spacing: 2px; font-family: "Georgia"; font-weight: normal; font-style: normal; font-weight: bold; color: #ff0b0b; font-size: 42px; }
 .bottom h2 span { color: black; font-size: 39px; }
 .bottom .present { margin-top: 45px; *zoom: 1; }
@@ -292,5 +295,10 @@ header .header_girl-right { float: right; position: relative; margin-top: 88px; 
 .bottom .present .present_img img { width: 136px; height: 136px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 6px solid #191919; background-clip: padding-box; }
 .bottom .present h3 { font-size: 20px; font-family: "Georgia"; font-weight: normal; font-style: normal; text-transform: uppercase; color: white; padding-top: 15px; }
 .bottom .present h4 { text-align: left; display: table; padding: 0 4px; background: #fe2d2d; font-size: 25px; font-family: "helveticaneuecyrbold"; font-weight: normal; font-style: normal; text-transform: uppercase; color: white; }
-.bottom .bottom_form_block { left: 492px; top: -33px; }
-.bottom .bottom_girl-right { float: right; margin-right: -125px; margin-top: -238px; }
+.bottom .bottom_form_block { left: 492px; top: -33px; *zoom: 1; }
+.bottom .bottom_form_block:after { content: " "; display: table; clear: both; }
+.bottom .bottom_girl-right { float: right; margin-right: -125px; margin-top: -513px; }
+.bottom .questions { margin-top: 220px; text-align: center; }
+.bottom .questions .questions_in { *zoom: 1; width: 800px; }
+.bottom .questions .questions_in:after { content: " "; display: table; clear: both; }
+.bottom .questions .h2_questions { font-family: "Georgia"; font-weight: normal; font-style: normal; font-size: 45px; font-weight: bold; display: inline; color: black; background: none; }

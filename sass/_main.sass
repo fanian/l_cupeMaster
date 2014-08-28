@@ -835,13 +835,15 @@ header
   .bottom_in
     @extend %in
     position: relative
+    +clr
     &:after
       position: absolute
       content: ""
       +s(rectangle)
       top: 610px
       left: 45%
-
+  .bottom_left
+    +clr
   h2
     text-align: left
     display: table
@@ -887,10 +889,28 @@ header
   .bottom_form_block
     left: 492px
     top: -33px
+    +clr
   .bottom_girl-right
     float: right
     margin-right: -125px
-    margin-top: -238px
+    margin-top: -513px
+
+  .questions
+    margin-top: 220px
+    text-align: center
+
+    .questions_in
+      @extend %in
+      +clr
+      width: 800px
+    .h2_questions
+      +georgia
+      font-size: 45px
+      font-weight: bold
+      display: inline
+      color: black
+      background: none
+
 
 
 
