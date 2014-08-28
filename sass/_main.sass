@@ -568,7 +568,7 @@ header
     width: 950px
     position: relative
     padding-top: 95px
-    margin-left: 235px
+    right: -50px
     .om_h2
       position: relative
       background: url(../img/white_rectangle.png) no-repeat 105px 8px
@@ -631,11 +631,131 @@ header
     left: 440px
 
 .steps
+  .steps_in
+    @extend %in
+    width: 1080px
+    position: relative
   background: url(../img/steps_bg.png) center no-repeat
   +background-size(cover)
   height: 1602px
   margin-top: -160px
   position: relative
+  box-sizing: border-box
+  padding-top: 250px
+  h2
+    color: #ffffff
+    font-size: 33px
+    +georgia
+    font-weight: bold
+    display: table
+    margin: 0 auto
+    text-align: center
+    position: relative
+    background: url(../img/rectangle_red_big.png) center no-repeat
+    height: 177px
+    letter-spacing: 1px
+    padding-top: 30px
+    box-sizing: border-box
+    text-transform: uppercase
+    line-height: 1.7em
+    span
+      color: #000000
+      background: #ffffff
+  .shape
+    position: absolute
+    content: ""
+    background: url(../img/shape.png) no-repeat
+    width: 605px
+    height: 603px
+    top: 340px
+    left: 110px
+  h3
+    +hcb
+    font-size: 18px
+    color: #d4d4d4
+    text-transform: uppercase
+    span
+      +hcm
+
+  h4
+    text-transform: uppercase
+    color: #d5d5d5
+    +hcl
+    font-size: 15px
+  .step
+    position: absolute
+    display: inline-block
+    width: 220px
+    top: 175px
+    left: 0
+    &:hover
+      cursor: pointer
+      h3
+        color: #ffffff
+      h4
+        color: #ffffff
+      &:before
+        +s(steps_img1-w)
+      &:after
+        +s(steps_hover)
+        top: 147px
+        left: 93px
+    &:before
+      position: absolute
+      content: ""
+      +s(steps_img1)
+      top: 0
+      left: 0
+    &:after
+      position: absolute
+      content: ""
+      background: #ef3333
+      width: 14px
+      height: 14px
+      +border-radius(50%)
+      top: 160px
+      left: 106px
+    .steps_button
+      text-align: center
+      padding: 14px 0 0 0
+      display: block
+      +georgia
+      font-weight: bold
+      text-transform: none
+      font-size: 16px
+      +single-text-shadow(black)
+      margin-top: 20px
+      text-decoration: none
+      letter-spacing: 1px
+    h3
+      padding-left: 60px
+  .step_two
+    width: 260px
+    top: 323px
+    left: 245px
+    h3
+      padding-left: 45px
+    &:hover
+      &:before
+        +s(steps_img2-w)
+      &:after
+        top: 90px
+        left: -13px
+    &:before
+      +s(steps_img2)
+    &:after
+      left: 0
+      top: 103px
+  .step_three
+    width: 355px
+    top: 400px
+    left: 300px
+    h3
+      padding-left: 45px
+    &:hover
+      &:before
+        +s(steps_img3-w)
+      &:after
 
 .get
   margin-top: -120px
