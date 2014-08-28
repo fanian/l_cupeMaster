@@ -201,8 +201,8 @@ input
   +border-radius(2px / 2px 2px 2px 2px)
   +background-clip(padding-box)
   background: #f00
-  +box-shadow(1px 2px 2px rgba(0,0,0,.39), inset 0 -4px 0 rgba(0,0,0,.32), inset 0 0 2px rgba(255,171,171,.75))
-  +background(linear-gradient(to bottom, #e00 0%, #ff3131 100%))
+  //+box-shadow(1px 2px 2px rgba(0,0,0,.39), inset 0 -4px 0 rgba(0,0,0,.32), inset 0 0 2px rgba(255,171,171,.75))
+  +background(linear-gradient(to bottom, #e00 0%, #ff3131 90%, #9b0000 100%))
   box-sizing: border-box
   font-family: 'helveticaneuecyrbold'
   color: #f3f3f2
@@ -210,8 +210,13 @@ input
   font-size: 18px
   padding: 0 73px
   +single-text-shadow
+  +box-shadow(0 0 60px -5px #ff3131)
+
   &:hover
-    +box-shadow(0 0 60px -5px #ff3131)
+    +background-image(linear-gradient(to bottom, rgb(255,65,38) 0%, rgb(253,60,33) 90%, #ba1f09 100%))
+  &:active
+    +background-image(linear-gradient(to bottom, rgb(237,48,24) 0%, rgb(234,42,19) 100%))
+
 .prev
   position: absolute
   content: ""
@@ -233,7 +238,7 @@ input
   content: ""
   top: 44%
   right: -33px
-  background: black
+  background: rgba(#000000, 0.8)
   width: 40px
   height: 40px
   +border-radius(50%)
@@ -243,7 +248,7 @@ input
   cursor: pointer
   z-index: 1
   &:hover
-    background: rgb(246,24,24)
+    background: rgba(246,24,24, 0.8)
 .header_form_block
   position: absolute
   width: 555px

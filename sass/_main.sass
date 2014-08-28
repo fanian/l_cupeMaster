@@ -53,8 +53,9 @@ input, textarea
 
 .myFancyClose
   position: absolute
-  top: 15px
-  right: 50px
+  top: 21px
+  right: 17px
+  +s(close_btn)
 
 .btn
   display: inline-block
@@ -883,6 +884,7 @@ header
         background: rgba(141, 141, 141, 0.20) no-repeat
         width: 1064px
         height: 1px
+        left: 0
   .get_item
     display: inline-block
     width: 360px
@@ -1214,9 +1216,178 @@ footer
         background-position: -110px -16px
 
 
+.thanks
+  box-sizing: border-box
+  text-align: center
+  background: url(../img/thanks_bg.png) no-repeat
+  width: 427px
+  height: 437px
+  padding: 90px 50px 0
+  h2
+    position: relative
+    +georgia
+    font-size: 32px
+    font-weight: bold
+    color: #ffffff
+    text-transform: uppercase
+    margin-bottom: 12px
+    &:before
+      position: absolute
+      +s(thanks_dash)
+      top: 18px
+      left: 24px
+      content: ""
+      z-index: 1
+    &:after
+      position: absolute
+      +s(thanks_dash)
+      top: 18px
+      right: 24px
+      content: ""
+      z-index: 1
+  h3
+    font-size: 17px
+    +hcb
+    color: #ffffff
+    text-transform: uppercase
+    margin-bottom: 45px
+  h4
+    +hcl
+    font-size: 19px
+    color: white
+    margin-bottom: 40px
+  .dash
+    display: table
+    width: 60px
+    height: 1px
+    background: #ffffff
+    margin: 0 auto
 
+.order_popup
+  box-sizing: border-box
+  background: url(../img/popup_bg.png) center no-repeat
+  width: 1124px
+  height: 854px
+  +clr
 
+  .order_popup-left
+    width: 640px
+    float: left
+    position: relative
+    margin-left: 52px
+    margin-top: 52px
+    +clr
 
-
+    .popup_up
+      text-align: left
+      height: 70px
+      padding-top: 18px
+      padding-left: 18px
+      box-sizing: border-box
+      h3
+        +georgia
+        font-size: 23px
+        font-weight: bold
+    .next
+      top: 37%
+      right: 20px
+      z-index: 201
+    .prev
+      top: 37%
+      left: 20px
+      z-index: 201
+    .popup_down
+      padding-left: 30px
+      padding-top: 30px
+      box-sizing: border-box
+      p
+        +hcl
+        font-size: 16px
+        span
+          +hcb
+  .order_popup-right
+    width: 381px
+    float: left
+    +clr
+    background: url(../img/popup_right_bg.jpg) no-repeat
+    height: 750px
+    margin-top: 52px
+    .form_inner
+      position: relative
+      padding-top: 45px
+      width: 275px
+      display: table
+      margin: 0 auto
+      text-align: center
+    h3
+      position: relative
+      +georgia
+      font-weight: bold
+      font-size: 30px
+      color: #ffffff
+      text-transform: uppercase
+      line-height: 1em
+      margin-bottom: 15px
+      &:before
+        position: absolute
+        +s(dash)
+        top: 11px
+        left: -12px
+        content: ""
+        z-index: 1
+      &:after
+        position: absolute
+        +s(dash)
+        top: 11px
+        right: -7px
+        content: ""
+        z-index: 1
+    h4
+      +hcm
+      font-size: 15px
+      color: #ffffff
+      text-transform: uppercase
+      line-height: 1.7em
+      letter-spacing: 1px
+    .form_send_block
+      margin-top: 40px
+      .form_right-left
+        input
+          display: inline-block
+      h5
+        color: #ffffff
+        font-size: 16px
+        +hcl
+        text-align: left
+        margin-left: 10px
+        margin-top: 20px
+      .radio_toolbar
+        label
+          margin-right: 0
+          margin-bottom: 5px
+        .radio_left
+          float: left
+          width: 140px
+        .radio_right
+          float: left
+          width: 120px
+      .defence
+        position: relative
+        margin-top: 10px
+        h6
+          font-size: 13px
+          +hcl
+          color: #c4c4c4
+          text-align: left
+          display: block
+          border-top: 1px solid #ffffff
+          padding-top: 15px
+          padding-left: 45px
+        &:before
+          +s(lock)
+          position: absolute
+          content: ""
+          top: 15px
+          left: 0
 
 

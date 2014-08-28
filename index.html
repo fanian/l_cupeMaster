@@ -446,8 +446,8 @@
         <div class="our_works_slider cycle-slideshow"
              data-cycle-slides="> div"
              data-cycle-timeout="0"
-             data-cycle-prev=".prev"
-             data-cycle-next=".next"
+             data-cycle-prev=".our_works .prev"
+             data-cycle-next=".our_works .next"
              data-cycle-fx="scrollHorz">
 
             <div class="slidee">
@@ -766,8 +766,8 @@
         <div class="workers_slider cycle-slideshow"
              data-cycle-slides="> div"
              data-cycle-timeout="0"
-             data-cycle-prev=".prev"
-             data-cycle-next=".next"
+             data-cycle-prev=".workers .prev"
+             data-cycle-next=".workers .next"
              data-cycle-fx="scrollHorz">
             <div class="slidee">
                 <div class="workers_item">
@@ -838,8 +838,8 @@
             <div class="reviews_slider cycle-slideshow"
                  data-cycle-slides="> div"
                  data-cycle-timeout="0"
-                 data-cycle-prev=".prev"
-                 data-cycle-next=".next"
+                 data-cycle-prev=".reviews .prev"
+                 data-cycle-next=".reviews .next"
                  data-cycle-fx="fade">
                 <div class="slidee">
                     <div class="reviews_item">
@@ -1027,6 +1027,79 @@
 
 </div>
 </div>
+<div id = "thanks" class="thanks" style="display: none;">
+    <h2>Спасибо!</h2>
+    <h3>ваша заявка отправлена</h3>
+    <h4>мы свяжемся с вами в течение 1 рабочего дня</h4>
+    <div class="dash"></div>
+</div>
+<div id="order_popup" class="order_popup" style="display: none;">
+ <div class="order_popup-left">
+    <div class="popup_up">
+        <h3>Шкаф-купе для спальни</h3>
+    </div>
+     <div class="prev"><img src="img/slide_left.png" alt="left"/></div>
+     <div class="next"><img src="img/slide_right.png" alt="right"/></div>
+     <div class="popup_slider cycle-slideshow"
+          data-cycle-timeout="0"
+          data-cycle-prev=".order_popup-left .prev"
+          data-cycle-next=".order_popup-left .next"
+          data-cycle-fx="scrollHorz">
+         <img src="img/popup_img.jpg" alt="img"/>
+         <img src="img/popup_img.jpg" alt="img"/>
+         <img src="img/popup_img.jpg" alt="img"/>
+     </div>
+     <div class="popup_down">
+         <p><span>Размер: </span>1,5 метра</p>
+         <p><span>Наполнение: </span>2 вешалки, 5 полок, 2 ящика, доводчики</p>
+         <p><span>Количество дверей: </span>2</p>
+         <p><span>Фасад: </span>матовое стекло</p>
+         <p><span>Цена: </span>45000 рублей</p>
+     </div>
+
+ </div>
+    <div class="order_popup-right">
+            <div class="form_inner">
+                <h3>оставьте <br/>заявку</h3>
+                <h4>на такой же шкаф-купэ для спальни</h4>
+                <div class="form_send_block">
+                    <form id="form7" action="#" method="post">
+
+
+                        <div class="form_right-left">
+                            <input type="text" name="name" class="name" placeholder="Как Вас зовут">
+                            <input type="text" name="phone" class="phone required" placeholder="Ваш телефон*">
+                            <button class="button">отправить</button>
+
+                        </div>
+                        <h5>Когда лучше с вами связаться:</h5>
+
+                        <div class="radio_toolbar">
+                           <div class="radio_left">
+                               <input type="radio" id="radio25" name="radios" value="all" checked>
+                               <label for="radio25"><span></span>В любое время</label>
+                               <input type="radio" id="radio27" name="radios" value="true">
+                               <label for="radio27"><span></span>В обед</label>
+                           </div>
+                           <div class="radio_right">
+                               <input type="radio" id="radio26" name="radios" value="false">
+                               <label for="radio26"><span></span>Утром</label>
+                               <input type="radio" id="radio28" name="radios" value="true">
+                               <label for="radio28"><span></span>Вечером</label>
+
+                           </div>
+
+                        </div>
+                        <div class="defence">
+                            <h6>Ваши данные защищены и не будут переданы третьим лицам</h6>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+    </div>
+</div>
+<a class="thanx-link fancybox" href="#thanks"></a>
 
 
 <!-- END out-->
