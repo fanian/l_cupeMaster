@@ -137,7 +137,7 @@ input, textarea
 header
   background: url(../img/photo_top.jpg) center no-repeat
   +background-size(cover)
-  height: 965px
+  height: 967px
   .menu
     margin-bottom: 35px
 
@@ -294,12 +294,16 @@ header
 
 
 .order
+  padding-top: 120px
+  box-sizing: border-box
+  background: url(../img/dots_bg.png) repeat
+  .order_stroke
+    border-top: 1px solid black
+
   .order_in
     @extend %in
     width: 1140px
-  position: relative
-  margin-top: 120px
-  border-top: 1px solid black
+    position: relative
   h2
     position: relative
     top: -85px
@@ -344,8 +348,11 @@ header
       +single-text-shadow(black)
 .facade
   position: relative
-  margin-top: 120px
-  border-top: 1px solid black
+  padding-top: 120px
+  background: url(../img/dotsSmall_bg.png) repeat
+  .facade_stroke
+    border-top: 1px solid black
+
   .facade_in
     @extend %in
     width: 1220px
@@ -398,6 +405,7 @@ header
   position: relative
   background: url(../img/formWide_bg.png) center no-repeat
   height: 462px
+  z-index: 1
   +background-size(cover)
   .orderWide_in
     @extend %in
@@ -456,9 +464,16 @@ header
   +background-size
   height: 108px
   margin-top: -50px
+  position: relative
 .inside
-  border-top: 1px solid black
-  margin-top: 40px
+  margin-top: -58px
+  padding-top: 120px
+  box-sizing: border-box
+  background: url(../img/dots_bg.png) repeat
+  .inside_stroke
+    border-top: 1px solid black
+
+
   .inside_in
     @extend %in
     width: 906px
@@ -466,6 +481,8 @@ header
     h2
       top: -27px
       position: relative
+      span
+        background: url(../img/dots_bg.png) repeat
     h3
       font-size: 16px
       text-transform: uppercase
@@ -497,16 +514,22 @@ header
       height: 50px
 
 .our_works
+  padding-top: 120px
+  box-sizing: border-box
+  background: url(../img/dots_bg.png) repeat
+  .our_works_stroke
+    border-top: 1px solid black
   .our_works_in
     @extend %in
     position: relative
     width: 1138px
     +clr
-  border-top: 1px solid black
-  margin-top: 20px
+  margin-top: -60px
   h2
     top: -27px
     position: relative
+    span
+      background: url(../img/dots_bg.png) repeat
   .our_works_slider
     margin-top: 10px
     +clr
@@ -896,7 +919,7 @@ header
     margin-top: -513px
 
   .questions
-    margin-top: 220px
+    margin-top: 250px
     text-align: center
 
     .questions_in
@@ -910,24 +933,80 @@ header
       display: inline
       color: black
       background: none
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      position: relative
+      &:before
+        position: absolute
+        content: ""
+        background: url(../img/questions_red-left.png)
+        width: 169px
+        height: 114px
+        top: 22px
+        left: -55px
+      &:after
+        position: absolute
+        content: ""
+        background: url(../img/questions_red-right.png)
+        width: 169px
+        height: 114px
+        top: 22px
+        right: -44px
+    a
+      display: table
+      margin: 52px auto 0 209px
+      border: solid 5px #f61818
+      padding: 10px 34px
+      +hcb
+      font-size: 20px
+      color: #f61818
+      text-decoration: none
+      text-transform: uppercase
+      &:hover
+        +box-shadow(inset #f61818 0 0 6px 0)
 footer
+  height: 205px
+  background: url(../img/stripes_bg.png) repeat
+  box-sizing: border-box
+  padding-top: 60px
+  .footer_in
+    @extend %in
+    width: 1030px
+    +clr
+  .footer_left
+    float: left
+    .footer_phone
+      +georgia
+      font-size: 30px
+      margin-bottom: 5px
+      span
+        font-weight: bold
+    .footer_addr
+      +hcr
+      font-size: 15px
+      color: #505050
+      margin-bottom: 5px
+    .footer_link
+      +hcr
+      font-size: 15px
+      color: #0054ff
+      &:hover
+        text-decoration: none
+  .footer_right
+    float: right
+    margin-bottom: 5px
+    h3
+      font-size: 16px
+      +hcm
+    a
+      +hcm
+      font-size: 16px
+      color: #0045ff
+      &:hover
+        text-decoration: none
+      &:after
+        position: absolute
+        content: ""
+        +s(bottom_logo)
+        background-position: -110px -16px
 
 
 
