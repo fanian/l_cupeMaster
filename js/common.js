@@ -15,6 +15,13 @@ head.ready(function() {
             }
         });
     });
+    //$('.parallax').css('background-position', 'center ' + (($('.parallax').offset().top - $(window).scrollTop()) * 0.1) + 'px');
+    $(window).stellar({
+        horizontalScrolling: false
+        ,
+        verticalOffset: 40
+
+    });
 
     $('#form1').validate();
     $('#form2').validate();

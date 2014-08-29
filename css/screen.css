@@ -229,7 +229,7 @@ header .header_girl-right { float: right; position: relative; margin-top: 88px; 
 .orderMan ul li span { padding: 4px 8px; background: white; }
 .orderMan .header_form_block { top: 110px; left: 440px; }
 
-.steps { background: url(../img/steps_bg.png) center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 1602px; margin-top: -160px; position: relative; box-sizing: border-box; padding-top: 250px; }
+.steps { background: url(../img/steps_bg.png) center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 1602px; margin-top: -160px; position: relative; box-sizing: border-box; padding-top: 250px; -webkit-transition: 0.5s background-position linear; -moz-transition: 0.5s background-position linear; -o-transition: 0.5s background-position linear; transition: 0.5s background-position linear; }
 .steps .steps_in { width: 1080px; position: relative; }
 .steps h2 { color: white; font-size: 33px; font-family: "Georgia"; font-weight: normal; font-style: normal; font-weight: bold; display: table; margin: 0 auto; text-align: center; position: relative; background: url(../img/rectangle_red_big.png) center no-repeat; height: 177px; letter-spacing: 1px; padding-top: 30px; box-sizing: border-box; text-transform: uppercase; line-height: 1.7em; }
 .steps h2 span { color: black; background: white; }
