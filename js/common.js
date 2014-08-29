@@ -3,12 +3,28 @@ head.ready(function() {
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
-    $('#form1 form').validate();
-    $('#form2 form').validate();
+    jQuery(document).ready(function($) {
+        var nav = $('.menu');
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 95) {
+                nav.addClass("f-nav");
+
+            } else {
+                nav.removeClass("f-nav");
+            }
+        });
+    });
+
+    $('#form1').validate();
+    $('#form2').validate();
     $('#form3').validate();
     $('#form4').validate();
+    $('#form5').validate();
+    $('#form6').validate();
+    $('#form7').validate();
 
-    $("#form1 form").ajaxForm({
+    $("#form1").ajaxForm({
         success: function () {
             $(".thanks-link").trigger('click');
         },
@@ -16,7 +32,7 @@ head.ready(function() {
             title: 'Спасибо!'
         }
     });
-    $("#form2 form").ajaxForm({
+    $("#form2").ajaxForm({
         success: function () {
             $(".thanks-link").trigger('click');
         },
@@ -26,6 +42,38 @@ head.ready(function() {
     });
 
     $("#form3").ajaxForm({
+        success: function () {
+            $(".thanks-link").trigger('click');
+        },
+        data: {
+            title: 'Спасибо!'
+        }
+    });
+    $("#form4").ajaxForm({
+        success: function () {
+            $(".thanks-link").trigger('click');
+        },
+        data: {
+            title: 'Спасибо!'
+        }
+    });
+    $("#form5").ajaxForm({
+        success: function () {
+            $(".thanks-link").trigger('click');
+        },
+        data: {
+            title: 'Спасибо!'
+        }
+    });
+    $("#form6").ajaxForm({
+        success: function () {
+            $(".thanks-link").trigger('click');
+        },
+        data: {
+            title: 'Спасибо!'
+        }
+    });
+    $("#form7").ajaxForm({
         success: function () {
             $(".thanks-link").trigger('click');
         },
@@ -50,9 +98,29 @@ head.ready(function() {
             $(".fancybox-skin").css("boxShadow","none");
         }
     });
-    $(".moreReviews").click(function(){
-        $("#otherItems").slideToggle("normal"); return false;
+//////////////////////without close button
+    $('.fancybox_wcb').fancybox({
+        padding: 0,
+        helpers: {
+            overlay: {
+                locked: false
+            }
+        },
+        tpl: {
+            closeBtn: 'false'
+        },
+        beforeShow: function(){
+            $(".fancybox-skin").css("backgroundColor","transparent");
+            $(".fancybox-skin").css("boxShadow","none");
+        }
     });
+//////////////////////////////////////////////////
+//more reviews show, when clicked
+//    $(".moreReviews").click(function(){
+//        $("#otherItems").slideToggle("normal"); return false;
+//    });
+//===============================================
+//disable or enable button, when click on checkbox
 //    $("#form4 input.yes").change(function () {
 //        if ($(this).is(":checked")) {
 //           $("#form4 .button").removeAttr('disabled');
@@ -62,15 +130,15 @@ head.ready(function() {
 //
 //        }
 //    });
-
+////////////////////////////////////////////////////////
   //add css class to cycle slider item, when clicking
-  jQuery(document).ready(function($){
-    $('.slider .cycle-slide').click(function(){
-        var index = $('.slider').data('cycle.API').getSlideIndex(this);
-        $('.cycle-slide-active').removeClass('cycle-slide-active');
-        $(this).addClass('cycle-slide-active');
-    });
-  });
+//  jQuery(document).ready(function($){
+//    $('.slider .cycle-slide').click(function(){
+//        var index = $('.slider').data('cycle.API').getSlideIndex(this);
+//        $('.cycle-slide-active').removeClass('cycle-slide-active');
+//        $(this).addClass('cycle-slide-active');
+//    });
+//  });
 
 
     //yet another scrolling with hightlight effect (works for me)
@@ -96,14 +164,14 @@ head.ready(function() {
             var id = $(this).attr('id');
             var top = ($('.page').offset().top - 80);
             if( $(window).scrollTop() >= (pos - 79)){
-                //$('.js-nav li').removeClass('is-active');
-                $('.js-nav li a').removeClass('is-active');
-                //$('[href = #'+id+']').parent().addClass('is-active');
-                $('[href = #'+id+']').addClass('is-active');
+                $('.js-nav li').removeClass('is-active');
+                //$('.js-nav li a').removeClass('is-active');
+                $('[href = #'+id+']').parent().addClass('is-active');
+                //$('[href = #'+id+']').addClass('is-active');
             }
             if($(window).scrollTop() < top){
-                //$('.js-nav li').removeClass('is-active');
-                $('.js-nav li a').removeClass('is-active');
+                $('.js-nav li').removeClass('is-active');
+                //$('.js-nav li a').removeClass('is-active');
 
             }
         });
