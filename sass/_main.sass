@@ -357,6 +357,8 @@ header
       box-sizing: border-box
       letter-spacing: 1px
       +single-text-shadow(black)
+      +box-shadow(0 0 60px -5px #ff3131)
+
 .facade
   position: relative
   padding-top: 120px
@@ -1040,6 +1042,7 @@ header
   .reviews_slider
     margin-top: 60px
     .reviews_item
+      white-space: normal
       vertical-align: top
       width: 560px
       display: inline-block
@@ -1064,6 +1067,7 @@ header
           color: #2a2a2a
       .social
         margin-top: 15px
+        height: 75px
         .vk,.fb,.ok
           display: inline-block
 
@@ -1216,7 +1220,8 @@ footer
       font-size: 16px
       +hcm
     a
-      +hcm
+      +georgia
+      font-weight: bold
       font-size: 16px
       color: #0045ff
       &:hover
@@ -1225,7 +1230,7 @@ footer
         position: absolute
         content: ""
         +s(bottom_logo)
-        background-position: -110px -16px
+        background-position: -105px -16px
 
 
 .thanks

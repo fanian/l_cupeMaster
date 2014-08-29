@@ -44,7 +44,7 @@ input:focus { border: 1px solid rgba(255, 0, 0, 0.75); -webkit-border-radius: 0;
 input.name { background: white url(../img/name_input.png) no-repeat 10px 11px; }
 input.phone { background: white url(../img/phone_input.png) no-repeat 10px 11px; }
 
-.button { margin-top: 7px; height: 55px; -webkit-border-radius: 2px/2px 2px 2px 2px; -moz-border-radius: 2px/2px 2px 2px 2px; -ms-border-radius: 2px/2px 2px 2px 2px; -o-border-radius: 2px/2px 2px 2px 2px; border-radius: 2px/2px 2px 2px 2px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background: red; background: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #ee0000), color-stop(90%, #ff3131), color-stop(100%, #9b0000)); background: -webkit-linear-gradient(to bottom, #ee0000 0%, #ff3131 90%, #9b0000 100%); background: -moz-linear-gradient(to bottom, #ee0000 0%, #ff3131 90%, #9b0000 100%); background: -o-linear-gradient(to bottom, #ee0000 0%, #ff3131 90%, #9b0000 100%); background: linear-gradient(to bottom, #ee0000 0%, #ff3131 90%, #9b0000 100%); box-sizing: border-box; font-family: "helveticaneuecyrbold"; color: #f3f3f2; text-transform: uppercase; font-size: 18px; padding: 0 73px; text-shadow: 0px 0px 1px #aaaaaa; -webkit-box-shadow: 0 0 60px -5px #ff3131; -moz-box-shadow: 0 0 60px -5px #ff3131; box-shadow: 0 0 60px -5px #ff3131; }
+.button { margin-top: 7px; height: 55px; -webkit-border-radius: 2px/2px 2px 2px 2px; -moz-border-radius: 2px/2px 2px 2px 2px; -ms-border-radius: 2px/2px 2px 2px 2px; -o-border-radius: 2px/2px 2px 2px 2px; border-radius: 2px/2px 2px 2px 2px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background: red; background: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #ee0000), color-stop(90%, #ff3131), color-stop(100%, #9b0000)); background: -webkit-linear-gradient(to bottom, #ee0000 0%, #ff3131 90%, #9b0000 100%); background: -moz-linear-gradient(to bottom, #ee0000 0%, #ff3131 90%, #9b0000 100%); background: -o-linear-gradient(to bottom, #ee0000 0%, #ff3131 90%, #9b0000 100%); background: linear-gradient(to bottom, #ee0000 0%, #ff3131 90%, #9b0000 100%); box-sizing: border-box; font-family: "helveticaneuecyrbold"; color: #f3f3f2; text-transform: uppercase; font-size: 18px; padding: 0 73px; text-shadow: 0px 0px 1px #aaaaaa; }
 .button:hover { background-image: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #ff4126), color-stop(90%, #fd3c21), color-stop(100%, #ba1f09)); background-image: -webkit-linear-gradient(to bottom, #ff4126 0%, #fd3c21 90%, #ba1f09 100%); background-image: -moz-linear-gradient(to bottom, #ff4126 0%, #fd3c21 90%, #ba1f09 100%); background-image: -o-linear-gradient(to bottom, #ff4126 0%, #fd3c21 90%, #ba1f09 100%); background-image: linear-gradient(to bottom, #ff4126 0%, #fd3c21 90%, #ba1f09 100%); }
 .button:active { background-image: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #ed3018), color-stop(100%, #ea2a13)); background-image: -webkit-linear-gradient(to bottom, #ed3018 0%, #ea2a13 100%); background-image: -moz-linear-gradient(to bottom, #ed3018 0%, #ea2a13 100%); background-image: -o-linear-gradient(to bottom, #ed3018 0%, #ea2a13 100%); background-image: linear-gradient(to bottom, #ed3018 0%, #ea2a13 100%); }
 
@@ -160,7 +160,7 @@ header .header_girl-right { float: right; position: relative; margin-top: 88px; 
 .order .order_item .order_img { -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.56); -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.56); box-shadow: 0 0 4px rgba(0, 0, 0, 0.56); padding: 1px; line-height: 0; }
 .order .order_item h3 { font-size: 23px; text-transform: uppercase; font-family: "helveticaneuecyrbold"; font-weight: normal; font-style: normal; margin-bottom: 24px; letter-spacing: -1px; }
 .order .order_item p { font-size: 16px; font-family: "helveticaneuecyrroman"; font-weight: normal; font-style: normal; line-height: 1.1em; margin-bottom: 24px; }
-.order .order_item .order_button { margin-top: 25px; display: block; text-align: center; font-size: 16px; text-decoration: none; height: 59px; padding: 18px 16px 0; box-sizing: border-box; letter-spacing: 1px; text-shadow: 0px 0px 1px black; }
+.order .order_item .order_button { margin-top: 25px; display: block; text-align: center; font-size: 16px; text-decoration: none; height: 59px; padding: 18px 16px 0; box-sizing: border-box; letter-spacing: 1px; text-shadow: 0px 0px 1px black; -webkit-box-shadow: 0 0 60px -5px #ff3131; -moz-box-shadow: 0 0 60px -5px #ff3131; box-shadow: 0 0 60px -5px #ff3131; }
 
 .facade { position: relative; padding-top: 120px; background: url(../img/dotsSmall_bg.png) repeat; }
 .facade .facade_stroke { border-top: 1px solid black; }
@@ -333,13 +333,13 @@ header .header_girl-right { float: right; position: relative; margin-top: 88px; 
 .reviews .reviews_in .next { top: 60%; }
 .reviews h2 { margin-top: -85px; }
 .reviews .reviews_slider { margin-top: 60px; }
-.reviews .reviews_slider .reviews_item { vertical-align: top; width: 560px; display: inline-block; }
+.reviews .reviews_slider .reviews_item { white-space: normal; vertical-align: top; width: 560px; display: inline-block; }
 .reviews .reviews_slider .reviews_item .reviews_img { float: left; margin-right: 15px; }
 .reviews .reviews_slider .reviews_item .reviews_img img { width: 180px; height: 180px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
 .reviews .reviews_slider .reviews_item .reviews_text { text-align: left; font-size: 16px; float: left; width: 350px; }
 .reviews .reviews_slider .reviews_item .reviews_text h3 { font-family: "helveticaneuecyrbold"; font-weight: normal; font-style: normal; text-transform: uppercase; margin-bottom: 10px; }
 .reviews .reviews_slider .reviews_item .reviews_text p { font-family: "helveticaneuecyrlight"; font-weight: normal; font-style: normal; color: #2a2a2a; }
-.reviews .reviews_slider .reviews_item .social { margin-top: 15px; }
+.reviews .reviews_slider .reviews_item .social { margin-top: 15px; height: 75px; }
 .reviews .reviews_slider .reviews_item .social .vk, .reviews .reviews_slider .reviews_item .social .fb, .reviews .reviews_slider .reviews_item .social .ok { display: inline-block; }
 
 .bottom { background: url(../img/bottom_bg.jpg) center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 1188px; padding-top: 85px; box-sizing: border-box; }
@@ -379,9 +379,9 @@ footer .footer_left .footer_link { font-family: "helveticaneuecyrroman"; font-we
 footer .footer_left .footer_link:hover { text-decoration: none; }
 footer .footer_right { float: right; margin-bottom: 5px; }
 footer .footer_right h3 { font-size: 16px; font-family: "helveticaneuecyrmedium"; font-weight: normal; font-style: normal; }
-footer .footer_right a { font-family: "helveticaneuecyrmedium"; font-weight: normal; font-style: normal; font-size: 16px; color: #0045ff; }
+footer .footer_right a { font-family: "Georgia"; font-weight: normal; font-style: normal; font-weight: bold; font-size: 16px; color: #0045ff; }
 footer .footer_right a:hover { text-decoration: none; }
-footer .footer_right a:after { position: absolute; content: ""; background: url('../img/icons-sc676e51057.png') 0 0 no-repeat; width: 162px; height: 53px; background-position: -110px -16px; }
+footer .footer_right a:after { position: absolute; content: ""; background: url('../img/icons-sc676e51057.png') 0 0 no-repeat; width: 162px; height: 53px; background-position: -105px -16px; }
 
 .thanks { box-sizing: border-box; text-align: center; background: url(../img/thanks_bg.png) no-repeat; width: 427px; height: 437px; padding: 90px 50px 0; }
 .thanks h2 { position: relative; font-family: "Georgia"; font-weight: normal; font-style: normal; font-size: 32px; font-weight: bold; color: white; text-transform: uppercase; margin-bottom: 12px; }
