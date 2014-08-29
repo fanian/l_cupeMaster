@@ -53,8 +53,8 @@ input, textarea
 
 .myFancyClose
   position: absolute
-  top: 21px
-  right: 17px
+  top: -26px
+  right: -13px
   +s(close_btn)
 
 .btn
@@ -883,6 +883,7 @@ header
   .get_items
     margin-top: 50px
     position: relative
+    z-index: 1
 
   .row
     margin-bottom: 50px
@@ -1276,17 +1277,16 @@ footer
 
 .order_popup
   box-sizing: border-box
-  background: url(../img/popup_bg.png) center no-repeat
-  width: 1124px
-  height: 854px
+  background: #ffffff
+  +border-radius(2px)
+  width: 1021px
+  height: 750px
   +clr
 
   .order_popup-left
     width: 640px
     float: left
     position: relative
-    margin-left: 52px
-    margin-top: 52px
     +clr
 
     .popup_up
@@ -1299,6 +1299,7 @@ footer
         +georgia
         font-size: 23px
         font-weight: bold
+        color: #000000
     .next
       top: 37%
       right: 20px
@@ -1322,7 +1323,6 @@ footer
     +clr
     background: url(../img/popup_right_bg.jpg) no-repeat
     height: 750px
-    margin-top: 52px
     .form_inner
       position: relative
       padding-top: 45px

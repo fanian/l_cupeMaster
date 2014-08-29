@@ -92,7 +92,7 @@ input::placeholder, textarea::placeholder { font-size: 15px; color: #3b3b3b; fon
 
 .top .top_in, header .menu .menu_in, header .h1_in, header .header_in, .order .order_in, .facade .facade_in, .orderWide .orderWide_in, .inside .inside_in, .our_works .our_works_in, .orderMan .orderMan_in, .steps .steps_in, .get .get_in, .certificates .certificates_in, .workers .workers_in, .reviews .reviews_in, .bottom .bottom_in, .bottom .questions .questions_in, footer .footer_in { max-width: 1200px; width: 1200px; margin-left: auto; margin-right: auto; }
 
-.myFancyClose { position: absolute; top: 21px; right: 17px; background: url('../img/icons-sc676e51057.png') 0 -989px no-repeat; width: 30px; height: 30px; }
+.myFancyClose { position: absolute; top: -26px; right: -13px; background: url('../img/icons-sc676e51057.png') 0 -989px no-repeat; width: 30px; height: 30px; }
 
 .btn { display: inline-block; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; text-decoration: none; padding: 10px 20px; -webkit-transition: background, 0.5s; -moz-transition: background, 0.5s; -o-transition: background, 0.5s; transition: background, 0.5s; }
 
@@ -288,7 +288,7 @@ header .header_girl-right { float: right; position: relative; margin-top: 88px; 
 .get .get_in { width: 1120px; position: relative; }
 .get .get_in:after { background: url(../img/get_red.png) no-repeat; content: ""; top: 165px; left: -90px; width: 1260px; height: 334px; position: absolute; }
 .get h2 { position: relative; margin-top: -85px; }
-.get .get_items { margin-top: 50px; position: relative; }
+.get .get_items { margin-top: 50px; position: relative; z-index: 1; }
 .get .row { margin-bottom: 50px; position: relative; }
 .get .row:first-child:after { position: absolute; content: ""; top: 157px; background: rgba(141, 141, 141, 0.2) no-repeat; width: 1064px; height: 1px; left: 0; }
 .get .get_item { display: inline-block; width: 360px; margin-right: 14px; position: relative; }
@@ -391,18 +391,18 @@ footer .footer_right a:after { position: absolute; content: ""; background: url(
 .thanks h4 { font-family: "helveticaneuecyrlight"; font-weight: normal; font-style: normal; font-size: 19px; color: white; margin-bottom: 40px; }
 .thanks .dash { display: table; width: 60px; height: 1px; background: white; margin: 0 auto; }
 
-.order_popup { box-sizing: border-box; background: url(../img/popup_bg.png) center no-repeat; width: 1124px; height: 854px; *zoom: 1; }
+.order_popup { box-sizing: border-box; background: white; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; width: 1021px; height: 750px; *zoom: 1; }
 .order_popup:after { content: " "; display: table; clear: both; }
-.order_popup .order_popup-left { width: 640px; float: left; position: relative; margin-left: 52px; margin-top: 52px; *zoom: 1; }
+.order_popup .order_popup-left { width: 640px; float: left; position: relative; *zoom: 1; }
 .order_popup .order_popup-left:after { content: " "; display: table; clear: both; }
 .order_popup .order_popup-left .popup_up { text-align: left; height: 70px; padding-top: 18px; padding-left: 18px; box-sizing: border-box; }
-.order_popup .order_popup-left .popup_up h3 { font-family: "Georgia"; font-weight: normal; font-style: normal; font-size: 23px; font-weight: bold; }
+.order_popup .order_popup-left .popup_up h3 { font-family: "Georgia"; font-weight: normal; font-style: normal; font-size: 23px; font-weight: bold; color: black; }
 .order_popup .order_popup-left .next { top: 37%; right: 20px; z-index: 201; }
 .order_popup .order_popup-left .prev { top: 37%; left: 20px; z-index: 201; }
 .order_popup .order_popup-left .popup_down { padding-left: 30px; padding-top: 30px; box-sizing: border-box; }
 .order_popup .order_popup-left .popup_down p { font-family: "helveticaneuecyrlight"; font-weight: normal; font-style: normal; font-size: 16px; }
 .order_popup .order_popup-left .popup_down p span { font-family: "helveticaneuecyrbold"; font-weight: normal; font-style: normal; }
-.order_popup .order_popup-right { width: 381px; float: left; *zoom: 1; background: url(../img/popup_right_bg.jpg) no-repeat; height: 750px; margin-top: 52px; }
+.order_popup .order_popup-right { width: 381px; float: left; *zoom: 1; background: url(../img/popup_right_bg.jpg) no-repeat; height: 750px; }
 .order_popup .order_popup-right:after { content: " "; display: table; clear: both; }
 .order_popup .order_popup-right .form_inner { position: relative; padding-top: 45px; width: 275px; display: table; margin: 0 auto; text-align: center; }
 .order_popup .order_popup-right h3 { position: relative; font-family: "Georgia"; font-weight: normal; font-style: normal; font-weight: bold; font-size: 30px; color: white; text-transform: uppercase; line-height: 1em; margin-bottom: 15px; }
