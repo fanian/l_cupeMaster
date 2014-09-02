@@ -1038,7 +1038,6 @@ header
 .reviews
   box-sizing: border-box
   background: url(../img/stripes_bg.png) repeat
-  height: 506px
   padding-top: 120px
   .reviews_stroke
     border-top: 1px solid black
@@ -1046,7 +1045,7 @@ header
     @extend %in
     width: 1140px
     position: relative
-
+    +clr
     .prev
       top: 60%
     .next
@@ -1055,6 +1054,7 @@ header
     margin-top: -85px
   .reviews_slider
     margin-top: 60px
+    +clr
     .reviews_item
       white-space: normal
       vertical-align: top
@@ -1072,7 +1072,6 @@ header
         font-size: 16px
         float: left
         width: 350px
-        height: 240px
 
         h3
           +hcb
